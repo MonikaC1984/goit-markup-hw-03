@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --logo1-color: #2196f3;
+  --logo2-color: #000000;
+  --color-header: #ffffff;
+  --color-h2: #212121;
+  --color-par: #757575;
+  --background-color: #2f303a;
+  --filter-color: #f5f4fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--color-h2);
+}
+
+.title {
+  font-family: "Raleway";
+}
+.container {
+  padding: 0 100px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: baseline;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+
+.logo {
+  text-decoration: none;
+}
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+  text-decoration-color: var(--logo1-color);
+}
+.logo1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo1-color);
+  text-decoration: none;
+}
+.logo2 {
+  font-family: "Oleo Script";
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo2-color);
+  text-decoration: none;
+}
+.logo1:hover,
+.logo1:focus {
+  background-color: var(--color-header);
+  color: var(--logo1-color);
+  border-color: var(--logo1-color);
+  text-decoration: underline;
+  text-decoration-color: var(--logo1-color);
+}
+
+.logo2:hover,
+.logo2:focus {
+  background-color: var(--color-header);
+  color: var(--logo2-color);
+  border-color: var(--logo1-color);
+  text-decoration: underline;
+  text-decoration-color: var(--logo1-color);
+}
+.nav {
+  color: var(--color-h2);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: flex;
+}
+
+.nav:hover,
+.nav:focus {
+  background-color: var(--color-header);
+  color: var(--logo1-color);
+  border-color: var(--logo1-color);
+}
+.ck1 {
+  color: var(--logo1-color);
+}
+.ck2 {
+  color: var(--color-par);
+}
+
+.h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-header);
+}
+.button1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: block;
+  margin: auto;
+  letter-spacing: 0.06em;
+  color: var(--color-header);
+  background-color: var(--logo1-color);
+  border-color: var(--logo1-color);
+}
+.h2 {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-h2);
+}
+.h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-h2);
+}
+
+.p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-par);
+}
+
+.names {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-h2);
+}
+
+.p1 {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-par);
+}
+
+.filter {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--logo2-color);
+  background-color: var(--filter-color);
+  border-radius: 4px;
+  border-color: var(--filter-color);
+}
+
+.filter:hover,
+.filter:focus {
+  background-color: var(--logo1-color);
+  color: var(--color-header);
+  border-color: var(--logo1-color);
+  text-decoration: underline;
+}
+
+.portfolioimage1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-h2);
+}
+
+.portfolioimage2 {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-par);
+}
+
+.footer {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.footer:hover,
+.footer:focus {
+  background-color: var(--logo1-color);
+  color: var(--color-header);
+  border-color: var(--logo1-color);
+  text-decoration: underline;
+}
+
+.footeradres {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.cf1 {
+  color: var(--color-header);
+}
+.cf2 {
+  color: #ffffff99;
+}
+.bc {
+  background-color: var(--background-color);
+}
