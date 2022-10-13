@@ -7,6 +7,16 @@
   --background-color: #2f303a;
   --filter-color: #f5f4fa;
 }
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0 0;
+  padding: 0 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--color-h2);
@@ -19,7 +29,6 @@ body {
 }
 .container {
   display: flex;
-  box-sizing: border-box;
   width: 100%;
   max-width: 1200px;
   padding: 0 15px;
@@ -29,6 +38,7 @@ body {
 
 .content-menu {
   display: flex;
+  padding: 15px 15px;
   justify-content: space-evenly;
   list-style: none;
   width: 270px;
@@ -37,6 +47,7 @@ body {
 
 .content-kontakt {
   display: flex;
+  padding: 15px 15px;
   justify-content: space-around;
   position: absolute;
   right: 200px;
@@ -47,7 +58,7 @@ body {
 
 .logo {
   display: flex;
-  margin: 0;
+  padding: 0 15px;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
@@ -116,22 +127,15 @@ body {
 }
 
 .container-h1-button1 {
-  display: block;
-  box-sizing: border-box;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 400px;
-  margin: 0;
-  max-width: 1600px;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 400px;
   background-color: var(--background-color);
   outline: 2px dashed #f44336;
 }
 .h1 {
-  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 60px;
   width: 696px;
   height: 120px;
   text-transform: uppercase;
