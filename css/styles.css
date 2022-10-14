@@ -27,6 +27,7 @@ body {
 .title {
   font-family: "Raleway";
 }
+
 .container {
   display: flex;
   width: 100%;
@@ -39,6 +40,7 @@ body {
 .content-menu {
   display: flex;
   padding: 15px 15px;
+  flex-grow: 1;
   justify-content: space-evenly;
   list-style: none;
   width: 270px;
@@ -126,18 +128,19 @@ body {
   color: var(--color-par);
 }
 
-.container-h1-button1 {
-  width: 100%;
+.background-intro {
   background-color: var(--background-color);
+}
+.container-h1-button1 {
+  display: block;
   outline: 2px dashed #f44336;
 }
 .h1 {
   text-align: center;
   margin: 0 auto;
   padding-top: 94px;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   width: 696px;
-  height: 120px;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -148,27 +151,65 @@ body {
 }
 
 .button1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: block;
-  margin-bottom: 20px;
-
   letter-spacing: 0.06em;
   color: var(--color-header);
   background-color: var(--logo1-color);
   border-color: var(--logo1-color);
   outline: 2px dashed #f44336;
 }
+.container-describe {
+  display: block;
+  outline: 2px dashed #f44336;
+}
 .h2 {
+  padding-top: 60px;
+  padding-bottom: 10px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-h2);
 }
+
+.card-set {
+  display: flex;
+  padding-bottom: 10px;
+  flex-wrap: nowrap;
+  gap: 40px;
+  list-style: none;
+}
+.item {
+  flex-basis: calc((100%-120px) / 4);
+  text-align: justify;
+  padding-top: 10px;
+  align-items: stretch;
+}
+
+.container-img {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.images-agencja {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.item-img {
+  flex-basis: calc((100%-40px) / 3);
+}
+
 .h3 {
+  padding: 10px 0;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -176,13 +217,20 @@ body {
   color: var(--color-h2);
 }
 
-.p {
+h1.p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-par);
 }
-
+.team-background {
+  background-color: var(--filter-color);
+}
+.team {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
 .names {
   font-family: "Roboto";
   font-weight: 500;
