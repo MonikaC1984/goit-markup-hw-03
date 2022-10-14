@@ -37,6 +37,10 @@ body {
   outline: 2px dashed #f44336;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .content-menu {
   display: flex;
   padding: 15px 15px;
@@ -60,7 +64,7 @@ body {
 
 .logo {
   display: flex;
-  padding: 0 15px;
+  padding: 0;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
@@ -138,8 +142,7 @@ body {
 .h1 {
   text-align: center;
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   width: 696px;
   text-transform: uppercase;
   font-weight: 900;
@@ -166,11 +169,11 @@ body {
 }
 .container-describe {
   display: block;
+  padding-top: 30px;
   outline: 2px dashed #f44336;
 }
 .h2 {
-  padding-top: 60px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -249,6 +252,13 @@ h1.p {
   color: var(--color-par);
 }
 
+.container-filter {
+  display: flex;
+  margin: auto;
+  width: 572px;
+  justify-content: space-evenly;
+  list-style: none;
+}
 .filter {
   font-family: "Roboto";
   font-weight: 500;
@@ -267,7 +277,18 @@ h1.p {
   background-color: var(--logo1-color);
   color: var(--color-header);
   border-color: var(--logo1-color);
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.container-portfolio {
+  margin: 0;
+  padding: 0;
+}
+.portfolio-set {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
 }
 
 .portfolioimage1 {
@@ -285,12 +306,16 @@ h1.p {
   color: var(--color-par);
 }
 
+.container-footer {
+  display: block;
+}
 .footer {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-decoration: none;
+  list-style: none;
 }
 .footer:hover,
 .footer:focus {
