@@ -44,6 +44,7 @@ body {
   justify-content: space-between;
   border-bottom: 2px solid #eeeeee;
 }
+
 .content-menu {
   display: flex;
   padding: 15px 15px;
@@ -52,18 +53,15 @@ body {
   justify-content: space-evenly;
   list-style: none;
   align-items: center;
-  outline: 2px dashed #f44336;
 }
 
 .content-kontakt {
   display: flex;
   margin-left: auto;
-
   width: 295px;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  outline: 2px dashed #f44336;
 }
 
 .logo {
@@ -72,7 +70,6 @@ body {
   width: 150px;
   align-items: center;
   text-decoration: none;
-  outline: 2px dashed #f44336;
 }
 
 .logo:hover,
@@ -142,7 +139,6 @@ body {
 }
 .container-h1-button1 {
   display: block;
-  outline: 2px dashed #f44336;
 }
 .h1 {
   text-align: center;
@@ -155,7 +151,6 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--color-header);
-  outline: 2px dashed #f44336;
 }
 
 .button1 {
@@ -170,12 +165,10 @@ body {
   color: var(--color-header);
   background-color: var(--logo1-color);
   border-color: var(--logo1-color);
-  outline: 2px dashed #f44336;
 }
 .container-describe {
   display: block;
   padding-top: 30px;
-  outline: 2px dashed #f44336;
 }
 .h2 {
   padding-bottom: 20px;
@@ -259,7 +252,9 @@ h1.p {
 
 .container-filter {
   display: flex;
-  margin: auto;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 30px;
   width: 572px;
   justify-content: space-evenly;
   list-style: none;
@@ -291,15 +286,16 @@ h1.p {
 }
 .portfolio-set {
   display: flex;
+  padding-bottom: 94px;
   flex-wrap: wrap;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .portfolio-card {
+  display: block;
   margin: 0;
-  padding: 0;
-  outline: 2px dashed #f44336;
 }
 .portfolioimage1 {
   font-weight: 700;
@@ -318,9 +314,8 @@ h1.p {
 
 .border-description {
   border: 2px solid #eeeeee;
-
-  margin: 0;
 }
+
 .container-footer {
   display: block;
 }
