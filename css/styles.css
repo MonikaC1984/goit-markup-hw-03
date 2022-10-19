@@ -43,13 +43,14 @@ body {
 .container-header {
   justify-content: space-between;
   border-bottom: 2px solid #eeeeee;
+  padding: 15px 0;
 }
 
 .content-menu {
   display: flex;
   padding: 15px 15px;
   margin-right: auto;
-  width: 284px;
+  gap: 46px;
   justify-content: space-evenly;
   list-style: none;
   align-items: center;
@@ -66,17 +67,12 @@ body {
 
 .logo {
   display: flex;
+  margin-right: 93px;
   padding: 0;
-  width: 150px;
   align-items: center;
   text-decoration: none;
 }
 
-.logo:hover,
-.logo:focus {
-  text-decoration: underline;
-  text-decoration-color: var(--logo1-color);
-}
 .logo1 {
   font-family: "Raleway";
   font-style: normal;
@@ -88,15 +84,15 @@ body {
   text-decoration: none;
 }
 .logo2 {
-  font-family: "Oleo Script";
+  font-family: "Raleway";
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo2-color);
   text-decoration: none;
 }
-.logo1:hover,
-.logo1:focus {
+.logo:hover,
+.logo:focus {
   background-color: var(--color-header);
   color: var(--logo1-color);
   border-color: var(--logo1-color);
@@ -104,14 +100,6 @@ body {
   text-decoration-color: var(--logo1-color);
 }
 
-.logo2:hover,
-.logo2:focus {
-  background-color: var(--color-header);
-  color: var(--logo2-color);
-  border-color: var(--logo1-color);
-  text-decoration: underline;
-  text-decoration-color: var(--logo1-color);
-}
 .nav {
   color: var(--color-h2);
   font-weight: 500;
@@ -139,11 +127,11 @@ body {
 }
 .container-h1-button1 {
   display: block;
+  padding: 200px 0;
 }
 .h1 {
   text-align: center;
-  margin: 0 auto;
-  padding-bottom: 30px;
+  margin: 0 auto 30px;
   width: 696px;
   text-transform: uppercase;
   font-weight: 900;
@@ -157,6 +145,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding: 10px auto;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -168,10 +157,9 @@ body {
 }
 .container-describe {
   display: block;
-  padding-top: 30px;
 }
 .h2 {
-  padding-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -183,12 +171,11 @@ body {
   display: flex;
   padding-bottom: 10px;
   flex-wrap: nowrap;
-  gap: 40px;
+  gap: 30px;
   list-style: none;
 }
 .item {
-  flex-basis: calc((100%-120px) / 4);
-  text-align: justify;
+  flex-basis: calc((100%-90px) / 4);
   padding-top: 10px;
   align-items: stretch;
 }
@@ -202,7 +189,7 @@ body {
 .images-agencja {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
 }
 
 .item-img {
@@ -210,15 +197,16 @@ body {
 }
 
 .h3 {
-  padding: 10px 0;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--color-h2);
 }
 
-h1.p {
+p.p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -230,7 +218,7 @@ h1.p {
 .team {
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
 }
 .names {
   font-family: "Roboto";
@@ -240,6 +228,8 @@ h1.p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-h2);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .p1 {
@@ -248,14 +238,15 @@ h1.p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-par);
+  margin-bottom: 30px;
 }
 
 .container-filter {
   display: flex;
   margin: 0 auto;
   padding-top: 94px;
-  padding-bottom: 30px;
-  width: 572px;
+  padding-bottom: 50px;
+  gap: 8px;
   justify-content: space-evenly;
   list-style: none;
 }
@@ -266,6 +257,7 @@ h1.p {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 6px 22px;
   color: var(--logo2-color);
   background-color: var(--filter-color);
   border-radius: 4px;
@@ -290,19 +282,24 @@ h1.p {
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
 }
 
+.portfolio-item {
+  flex-basis: calc((40 / 3));
+}
 .portfolio-card {
   display: block;
   margin: 0;
 }
+
 .portfolioimage1 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-h2);
+  margin-bottom: 4px;
 }
 
 .portfolioimage2 {
@@ -313,7 +310,9 @@ h1.p {
 }
 
 .border-description {
-  border: 2px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
 
 .container-footer {
